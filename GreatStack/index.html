@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Figtree:wght@300;400;500;600;700&family=Kaushan+Script&family=Montserrat:wght@200;300;500;600&family=Neucha&family=Nunito:wght@300;400;600;700;800&family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="/image/logo.png" alt="logo image" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1 class="text-box-heading">World's Best University</h1>
+        <p>
+          I am gonna be the best version of myself. With good communication
+          skill, mindset to be best, healthy body and profound knowledge on
+          diverse subject <br />
+          I am gonna achieve it.
+        </p>
+        <a class="hero-btn">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- course  -->
+    <section class="course">
+      <h1>Course We Offer</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3 class="course-heading">Basic</h3>
+          <p class="course-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim,
+            reprehenderit ad quas voluptatum saepe fuga quam dolorum fugiat
+            minus natus ut sapiente vitae. Deleniti unde quos itaque nesciunt
+            porro? Blanditiis ad soluta sequi laudantium quibusdam assumenda
+            voluptatibus ratione, accusamus natus aperiam tempora harum
+            doloribus quod illo quo mollitia beatae nam deserunt sint, quaerat
+            eveniet cum sit? In, eaque animi?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3 class="course-heading">Intermediate</h3>
+          <p class="course-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim,
+            reprehenderit ad quas voluptatum saepe fuga quam dolorum fugiat
+            minus natus ut sapiente vitae. Deleniti unde quos itaque nesciunt
+            porro? Blanditiis ad soluta sequi laudantium quibusdam assumenda
+            voluptatibus ratione, accusamus natus aperiam tempora harum
+            doloribus quod illo quo mollitia beatae nam deserunt sint, quaerat
+            eveniet cum sit? In, eaque animi?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3 class="course-heading">Degree</h3>
+          <p class="course-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim,
+            reprehenderit ad quas voluptatum saepe fuga quam dolorum fugiat
+            minus natus ut sapiente vitae. Deleniti unde quos itaque nesciunt
+            porro? Blanditiis ad soluta sequi laudantium quibusdam assumenda
+            voluptatibus ratione, accusamus natus aperiam tempora harum
+            doloribus quod illo quo mollitia beatae nam deserunt sint, quaerat
+            eveniet cum sit? In, eaque animi?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- campus  -->
+    <section class="campus">
+        <h1>Hamro Campus</h1>
+        <p>We are gonna change the education system.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="/image/london.png" />
+                <div class="layer">
+                    <h3>LONDON</h3>
+                    
+                </div>
+            <div class="campus-col">
+                <img src="/image/newyork.png" />
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+
+                </div>
+            <div class="campus-col">
+                <img src="/image/washington.png" />
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+      const navLinks = document.getElementById("navLinks");
+      console.log("navLinks", navLinks);
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-250px";
+      }
+    </script>
+  </body>
+</html>
